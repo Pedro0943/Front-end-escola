@@ -1,0 +1,10 @@
+
+.list-formacao{
+    display: grid;
+    justify-items: center;
+    gap: 12px
+}
+
+.title-Profissionalizante{
+    font-size: 3em;
+}

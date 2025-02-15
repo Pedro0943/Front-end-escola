@@ -1,0 +1,57 @@
+:root{
+    --marrom_light: #6d5454;
+    --marrom_dark: #3d2626;
+    --branco: #FFFFFF;
+    --h1_tabela: #212529;
+    --preto: #000000;
+    --brancofosco: #D9D9D9;
+    --cinza_100: #796d6d;
+    --cinza_200: #1d1b1b;
+    --cinza_300: #0f0d0d;
+
+}
+
+.nav-item{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navegacao{
+    color: var(--branco);
+    background: var(--cinza_200);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 30px;
+    min-width: 320px;
+    height: 80px;
+    padding-bottom: 8px!important; 
+    padding-top: 10px!important;
+}
+
+.container-fluid{
+    padding: 5px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px ;
+    color: var(--branco);
+}
+  
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-end;
+    padding-right: 80px;
+    justify-content: end;
+    font-size: 1.4em;
+}

@@ -1,0 +1,37 @@
+.avaliacao {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.star-icon {
+    font-size: 24px; /* Ajuste o tamanho da estrela */
+    color: gray; /* Cor padrão */
+    margin: 2px;
+    position: relative;
+}
+
+/* Estrelas cheias */
+.star-icon.ativo {
+    color: gold;
+}
+
+/* Meia estrela */
+.star-icon.meio {
+    position: relative;
+}
+
+.star-icon.meio::before {
+    content: "\2606"; /* ☆ Estrela vazia */
+    position: absolute;
+    color: gray;
+}
+
+.star-icon.meio::after {
+    content: "\2605"; /* ⭐ Estrela cheia */
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    color: gold;
+}

@@ -8,6 +8,7 @@ import Home from './pages/Home'
 
 import Formacaod from './pages/IdFormacao'
 import ListFormacao from './pages/ListFormacao'
+import NotFoud from './pages/NotFoud'
 
 
 
@@ -20,7 +21,7 @@ function App() {
           <Route path='/lists/:listid/formacao' element= {<ListFormacao/>}/>
           <Route path='/formacao/:id' element={<Formacaod/>} />
           <Route path = "/lists" element={<ListPage/>}/>
-          <Route path='*' element= {<h1>Not foud</h1>}/>
+          <Route path='*' element= {<NotFoud/>}/>
       </Routes>
     </BrowserRouter>
   )

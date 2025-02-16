@@ -5,8 +5,11 @@ function Home(){
     return(
             <div className='container'>
                 <NavBar/>
+                <div className="">
+                    <h1>Sistema Escola</h1>
+                    <p></p>
 
-                <h1>Home</h1>
+                </div>
             </div>
     )
 }

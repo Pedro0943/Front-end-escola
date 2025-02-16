@@ -1,3 +1,4 @@
+import { Star } from "../star/star"
 import "./Formacao.css"
 
 
@@ -18,14 +19,26 @@ interface FormacaoDataProps {
 
 export function Formacao({ nome, score, imgUrl, cargaHoraria, duracao, nivel, shortDescription, longDescription}: FormacaoDataProps){
     return(
-        <div>
-            <img className="img" src={imgUrl}  />
-            <div>
-                <h1>{nome}</h1>
-                <p>Duração: {duracao}</p>
+        <div className="box-formacao">
+            <div className="container-box">
+                <img className="img" src={imgUrl}  />
+                <div className="info">
+                    
+                    <h1>{nome}</h1>
+                    <p>Duração: {duracao}</p>
+                    
+                    <p>Carga Horaria: {cargaHoraria}h</p>
+                    <Star
+                    score={score}/>
+                    <p>{nivel}</p>
+                </div>
             </div>
-            <p>{score}</p>
-            <p>{nivel}</p>
+
+            <div className="descricao">
+                <p >Descrição:</p>
+                <p className="descricao-p">{shortDescription}<br/>
+                {longDescription}</p>
+            </div>
         </div>
     )
 }

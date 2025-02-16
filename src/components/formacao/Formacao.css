@@ -1,0 +1,35 @@
+:root{
+    --background_opacidade: #b19a9a2c;
+    --marrom_light: #6d5454;
+    --marrom_dark: #3d2626;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --brancofosco: #D9D9D9;
+    --cinza_100: #796d6d;
+    --cinza_200: #1d1b1b;
+    --cinza_300: #0f0d0d;
+
+}
+
+.box-formacao{
+    display: grid;
+    background: var(--background_opacidade);
+    justify-content: center;
+    width: 700px;
+    padding: 20px;
+}
+
+.container-box{
+    display: flex;
+    gap: 20px;
+
+}
+
+.info {
+    display: flow;
+    align-content: center;
+}
+
+.descricao-p{
+    font-size: 1.2em;
+}

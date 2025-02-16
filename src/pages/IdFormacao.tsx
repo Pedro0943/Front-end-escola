@@ -14,7 +14,7 @@ const { data: list } = useFormacaoData(Number(id));
         <div>
             <NavBar/>
             <Link to={"/lists/:listid/formacao"}>Voltar</Link>
-            <div>
+            <div className="list-formacao">
 
                     {list?.data && (
                         <Formacao
